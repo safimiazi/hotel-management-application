@@ -1,0 +1,76 @@
+.report-dom tr{
+    border: 1px solid rgb(4 4 4) !important;
+    color: #222  !important;
+  }
+  
+  .report-dom tr td{
+    border: 1px solid rgb(4 4 4) !important;
+    color: #222  !important;
+    padding: 1px 1px 1px 1px !important;
+    font-size: 12px  !important;
+  
+  }
+  .report-dom tr th{
+    border: 1px solid rgb(4 4 4) !important;
+    color: #000000 !important;
+    background: #cecfce !important;
+    padding: 1px;
+    font-size: 14px  !important;
+  
+  }
+  .report-dom tr:nth-child(even) {
+    background: #ffffff;
+  }
+  
+  .report-dom tr:nth-child(odd) {
+    background: #fbfbfb;
+  }
+
+  tfoot tr td {
+    font-weight: bold !important
+  }
+
+
+  .print-source {
+    display: none;
+}
+
+
+.invoice tr th{
+  border: 1px solid rgb(4 4 4) !important;
+  color: #000000 !important;
+  /* background: #e8eae8 !important; */
+  font-size: 14px  !important;
+
+}
+
+.invoice tr td{
+  border: 1px solid rgb(4 4 4) !important;
+  color: #222  !important;
+  /* padding: 1px 1px 1px 1px !important; */
+  font-size: 12px  !important;
+
+}
+
+@media print {
+    .print-no {
+        display: none !important
+    }
+    body {
+        background-color: white;
+     
+      }
+    .print-source {
+      display: block;
+      /* background-color: green; */
+    }
+    .report-dom tr th{
+        border: 1px solid rgb(4 4 4) !important;
+        color: #000000 !important;
+        background: #cecfce !important;
+        padding: 1px;
+        font-size: 14px  !important;
+      
+      }
+    
+  }

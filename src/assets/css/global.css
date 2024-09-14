@@ -1,0 +1,242 @@
+.module-text span{
+    font-style: italic !important;
+    font-weight: bold !important;
+    color: #8bc500;
+}
+
+
+.building-section{
+  background-color: #e9e9e9;
+  height: 850px;
+  overflow-y: scroll;
+}
+
+.floor{
+
+  background-color: #ffffff;
+  padding: 15px;
+  color: white;
+  /* border: 5px solid #222; */
+  
+  margin: 8px !important;
+  /* border-bottom: 5px solid #150695; */
+  position: relative;
+  
+  border: 1px solid #c1c1c1;
+
+
+}
+
+.unit-plus-btn{
+    position: absolute;
+    top: 0px;
+    left: 95%;
+    transform: translateX(-50%);
+    background-color: #b70000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.unit-section{
+  /* background-color: #e9e9e9; */
+  padding: 1px;
+}
+.unit{ 
+  background-color: #0f7e77;
+  margin: 6px !important;
+  position: relative;
+}
+
+.room-plus-btn{
+    position: absolute;
+    top: 0px;
+    left: 91%;
+    transform: translateX(-50%);
+    background-color: #b70000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+.room-section{
+  /* background-color: #23b7a7; */
+  padding: 1px;
+}
+
+.room{
+  background-color: #88918e;
+    padding: 0px;
+    margin: 10px !important;
+    color: #262626;
+    position: relative;
+}
+
+.statusColorGreen {
+  background-color: #4cb84c  !important;
+  border-radius: 4px;
+
+}
+
+.statusColorRed {
+  background-color:#c94848  !important;
+  border-radius: 4px;
+  
+}
+
+.selectedColor {
+  background-color: gray !important;
+}
+
+.room-type-section{
+  background-color: #222;
+  margin-bottom: 10px;
+}
+.seat-plus-btn{
+  position: absolute;
+    top: -12px;
+    left: 87%;
+    transform: translateX(-50%);
+    background-color: #b70000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.seat-section{
+  padding: 0px;
+  margin-bottom: 8px;
+}
+
+.seat{
+  padding: 1px;
+  background-color: #f9f9f9;
+  /* margin: 3px !important; */
+  color: black;
+}
+
+
+
+.floor-title{
+  margin: 7px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.unit-title{
+  margin: 18px;
+  font-size: 18px;
+
+}
+.room-title{
+  margin-top: 22px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.seat-title{
+    margin: 0;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+    margin-left: -3px;
+}
+.plus-link-div{
+   position:relative;
+}
+.plus-link{
+  margin: 0;
+  cursor:pointer;
+  padding: 0;
+  margin-top: -31px;
+  font-size: 29px;
+  height: 21px;
+  text-align:right;
+  position: absolute;
+  right: 0;
+  color: #3e8d54;
+}
+
+
+
+.stock-availity {
+  color: rgb(11, 164, 11);
+}
+.stock-unavaility {
+  color: red;
+}
+
+
+/* For Invoice */
+@media print {
+  .bottom-component {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 50px; /* Adjust this to make space between content and footer */
+  }
+
+
+  .footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signature {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .line-right {
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    right: 0;
+  }
+  .line-left {
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+  }
+
+  @page {
+    margin-top: 10mm;
+    margin-bottom: 10mm; /* Increased bottom margin for footer */
+    size: auto;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  .page-break:last-child {
+    page-break-after: auto;
+  }
+
+  .no-page-break {
+    page-break-inside: avoid;
+  }
+}
+
+
+/* ********************** */
+
+
